@@ -80,8 +80,8 @@ function cin_cinder_config {
 }
 
 function cin_cinder_restart {
-				systemctl enable openstack-cinder-volume.service target.service
-				systemctl start openstack-cinder-volume.service target.service
+				systemctl enable --all openstack-cinder-volume.service target.service
+				systemctl start --all openstack-cinder-volume.service target.service
 }
 
 
